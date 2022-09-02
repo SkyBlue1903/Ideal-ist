@@ -58,13 +58,29 @@
 			children = (
 				577DC98428C0C57700553193 /* AppDelegate.swift */,
 				577DC98628C0C57700553193 /* SceneDelegate.swift */,
-				577DC98828C0C57700553193 /* ViewController.swift */,
-				577DC98A28C0C57700553193 /* Main.storyboard */,
+				57D4E97528C1D5F9004EDC72 /* Controller */,
+				57D4E97628C1D603004EDC72 /* View */,
 				577DC98D28C0C57800553193 /* Assets.xcassets */,
 				577DC98F28C0C57800553193 /* LaunchScreen.storyboard */,
 				577DC99228C0C57800553193 /* Info.plist */,
 			);
 			path = "Ideal-ist";
+			sourceTree = "<group>";
+		};
+		57D4E97528C1D5F9004EDC72 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				577DC98828C0C57700553193 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		57D4E97628C1D603004EDC72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				577DC98A28C0C57700553193 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
