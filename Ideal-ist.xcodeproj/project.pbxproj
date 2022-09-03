@@ -13,6 +13,7 @@
 		577DC98C28C0C57700553193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577DC98A28C0C57700553193 /* Main.storyboard */; };
 		577DC98E28C0C57800553193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577DC98D28C0C57800553193 /* Assets.xcassets */; };
 		577DC99128C0C57800553193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577DC98F28C0C57800553193 /* LaunchScreen.storyboard */; };
+		57C8E96B28C2FF150035002F /* HasilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C8E96A28C2FF150035002F /* HasilViewController.swift */; };
 		57D4E97828C1ED19004EDC72 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4E97728C1ED19004EDC72 /* Calculator.swift */; };
 		57D4E97B28C1ED53004EDC72 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D4E97A28C1ED53004EDC72 /* BMI.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		577DC98D28C0C57800553193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		577DC99028C0C57800553193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		577DC99228C0C57800553193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57C8E96A28C2FF150035002F /* HasilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasilViewController.swift; sourceTree = "<group>"; };
 		57D4E97728C1ED19004EDC72 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		57D4E97A28C1ED53004EDC72 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				577DC98828C0C57700553193 /* ViewController.swift */,
+				57C8E96A28C2FF150035002F /* HasilViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57C8E96B28C2FF150035002F /* HasilViewController.swift in Sources */,
 				57D4E97B28C1ED53004EDC72 /* BMI.swift in Sources */,
 				577DC98928C0C57700553193 /* ViewController.swift in Sources */,
 				57D4E97828C1ED19004EDC72 /* Calculator.swift in Sources */,

@@ -10,5 +10,7 @@ import UIKit
 struct BMI {
     let nilai: Float
     let saran: String
+    let link: String
+    let tipe: String
     let warna: UIColor
 }
