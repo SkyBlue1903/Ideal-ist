@@ -22,6 +22,7 @@ class HasilViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        saranButton.isHidden = false
         
         print("Get warna method: \(warna)")
 //        hasilBMI.text = nilaiBMI
@@ -32,7 +33,7 @@ class HasilViewController: UIViewController {
         view.backgroundColor = UIColor.red
         print("warna view", self.view.backgroundColor!)
         
-        saranButton.setTitle("\(tautan ?? "nill")", for: .normal)
+        saranButton.setTitle("\("Lihat saran artikel Halodoc" ?? "nill")", for: .normal)
         
         if Double(nilaiBMI!)! <= 18.9 || Double(nilaiBMI!)! >= 25  && Double(nilaiBMI!)! <= 39.9 {
             
@@ -49,6 +50,11 @@ class HasilViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func saranDitekan(_ sender: UIButton) {
+        if let url = NSURL(string: "\(tautan ?? "https://google.com")"){
+            UIApplication.shared.openURL(url as URL as URL)
+            }
+    }
     
     
     /*
