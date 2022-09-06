@@ -47,6 +47,7 @@ class ViewController: UIViewController {
             hasilVC.saran = penghitung.getSaran()
             hasilVC.warna = penghitung.getWarna()
             hasilVC.tautan = penghitung.getTautan()
+            hasilVC.tipe = penghitung.getTipe()
         }
     }
     

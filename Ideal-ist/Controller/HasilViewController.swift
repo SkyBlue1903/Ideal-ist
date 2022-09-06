@@ -12,9 +12,9 @@ class HasilViewController: UIViewController {
     var nilaiBMI: String?
     var saran: String?
     var warna: UIColor?
+    var tipe: String?
     var tautan: String?
     
-    @IBOutlet var warnaBelakangHasil: UIView!
     @IBOutlet weak var hasilBMI: UILabel!
     @IBOutlet weak var jenisBMI: UILabel!
     @IBOutlet weak var saranLabel: UILabel!
@@ -23,18 +23,33 @@ class HasilViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        hasilBMI.text = nilaiBMI
-        saranLabel.text = saran
-        print("Warna adalah: ", warna)
-        warnaBelakangHasil.backgroundColor = warna!
+        print("Get warna method: \(warna)")
+//        hasilBMI.text = nilaiBMI
+//        saranLabel.text = saran
+//        jenisBMI.text = tipe
+//        print("Warna adalah: ", warna)
+//        warnaBelakangHasil.backgroundColor = warna!
+        view.backgroundColor = UIColor.red
+        print("warna view", self.view.backgroundColor!)
         
         saranButton.setTitle("\(tautan ?? "nill")", for: .normal)
+        
+        if Double(nilaiBMI!)! <= 18.9 || Double(nilaiBMI!)! >= 25  && Double(nilaiBMI!)! <= 39.9 {
+            
+        } else if Double(nilaiBMI!)! <= 24.9 && Double(nilaiBMI!)! >= 19{
+            // Kondisi ideal
+            saranButton.isHidden = true
+        } else if Double(nilaiBMI!)! >= 40 {
+                
+        }
         
     }
     
     @IBAction func kembaliSegue(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
+    
+    
     
     /*
     // MARK: - Navigation

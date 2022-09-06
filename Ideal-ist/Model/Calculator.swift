@@ -27,6 +27,10 @@ struct Calculator {
         return bmi?.link ?? "https://www.halodoc.com/artikel"
     }
     
+    func getTipe() -> String {
+        return bmi?.tipe ?? "null"
+    }
+    
     mutating func hitungBMI(_ tinggi: Float, _ berat: Float) {
         print("Raw value, tinggi: \(tinggi) cm, berat: \(berat) kg")
         let nilaiBMI = berat / ((tinggi * tinggi)/10000)
@@ -34,15 +38,15 @@ struct Calculator {
         
         
         if nilaiBMI <= 18.9 {
-            bmi = BMI(nilai: nilaiBMI, saran: "Makan yang banyak ya!", link: "https://www.halodoc.com/artikel/search/meningkatkan%20berat%20badan", tipe: "Kekurangan berat badan", warna: #colorLiteral(red: 0.96862763, green: 0.75393707, blue: 0.27450982, alpha: 1.0))
+            bmi = BMI(nilai: nilaiBMI, saran: "Makan yang banyak ya!", link: "https://www.halodoc.com/artikel/search/meningkatkan%20berat%20badan", tipe: "Kekurangan berat badan", warna: #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1))
         } else if nilaiBMI <= 24.9 {
-            bmi = BMI(nilai: nilaiBMI, saran: "Berat anda ideal 🤩", link: "null", tipe: "Berat badan ideal", warna: #colorLiteral(red: 0.24409443, green: 0.8267718, blue: 0.7736222, alpha: 0.8444882))
+            bmi = BMI(nilai: nilaiBMI, saran: "Berat anda ideal 🤩", link: "null", tipe: "Berat badan ideal", warna: #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1))
         } else if nilaiBMI <= 29.9 {
-            bmi = BMI(nilai: nilaiBMI, saran: "Yuk kurangi berat badannya", link:"https://www.halodoc.com/artikel/search/menurunkan%20berat%20badan", tipe: "Berat badan berlebih", warna: #colorLiteral(red: 0.3838583, green: 0.54921263, blue: 0.66929144, alpha: 1.0))
+            bmi = BMI(nilai: nilaiBMI, saran: "Yuk kurangi berat badannya", link:"https://www.halodoc.com/artikel/search/menurunkan%20berat%20badan", tipe: "Berat badan berlebih", warna: #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1))
         } else if nilaiBMI <= 39.9 {
-            bmi = BMI(nilai: nilaiBMI, saran: "Harus diet ya, bahaya kesehatan! 😱", link: "https://www.halodoc.com/artikel/search/obesitas", tipe: "Obesitas", warna: #colorLiteral(red: 0.7677166, green: 4.371426e-07, blue: 0.48818898, alpha: 0.9232283))
+            bmi = BMI(nilai: nilaiBMI, saran: "Harus diet ya, bahaya kesehatan! 😱", link: "https://www.halodoc.com/artikel/search/obesitas", tipe: "Obesitas", warna: #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1))
         } else if nilaiBMI >= 40 {
-                bmi = BMI(nilai: nilaiBMI, saran: "Berat anda sangat berbahaya!🤯", link: "https://www.google.com/maps/search/rumah+sakit+terdekat/", tipe: "Obesitas akut", warna: #colorLiteral(red: 0.7677166, green: 4.371426e-07, blue: 0.48818898, alpha: 0.9232283))
+                bmi = BMI(nilai: nilaiBMI, saran: "Berat anda sangat berbahaya!🤯", link: "https://www.google.com/maps/search/rumah+sakit+terdekat/", tipe: "Obesitas akut", warna: #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1))
         }
         
         printRawValues()
